@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 295740171}
   - component: {fileID: 295740173}
   - component: {fileID: 295740172}
+  - component: {fileID: 295740174}
   m_Layer: 0
   m_Name: Left
   m_TagString: Walls
@@ -218,6 +219,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &295740174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295740170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15db4930a6528f34eaf28604e0e56bca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triangleObj: {fileID: 370832805787717031, guid: 3c3605f8d1767cc49900c2578aa5256b,
+    type: 3}
 --- !u!1 &549757051
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,72 +907,3 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!1001 &3308775682721067476
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7105396149976635984, guid: 387ff14e1e28e7c4eaa8bba5e5142750,
-        type: 3}
-      propertyPath: m_Name
-      value: WallBounceEffect
-      objectReference: {fileID: 0}
-    - target: {fileID: 7870751905826373789, guid: 387ff14e1e28e7c4eaa8bba5e5142750,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7870751905826373789, guid: 387ff14e1e28e7c4eaa8bba5e5142750,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 7870751905826373789, guid: 387ff14e1e28e7c4eaa8bba5e5142750,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7870751905826373789, guid: 387ff14e1e28e7c4eaa8bba5e5142750,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7870751905826373789, guid: 387ff14e1e28e7c4eaa8bba5e5142750,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7870751905826373789, guid: 387ff14e1e28e7c4eaa8bba5e5142750,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7870751905826373789, guid: 387ff14e1e28e7c4eaa8bba5e5142750,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7870751905826373789, guid: 387ff14e1e28e7c4eaa8bba5e5142750,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7870751905826373789, guid: 387ff14e1e28e7c4eaa8bba5e5142750,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7870751905826373789, guid: 387ff14e1e28e7c4eaa8bba5e5142750,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7870751905826373789, guid: 387ff14e1e28e7c4eaa8bba5e5142750,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 387ff14e1e28e7c4eaa8bba5e5142750, type: 3}
