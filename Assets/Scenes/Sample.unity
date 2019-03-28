@@ -702,6 +702,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WallBounceEffectObj: {fileID: 7105396149976635984, guid: 387ff14e1e28e7c4eaa8bba5e5142750,
     type: 3}
+  DeathEffectObj: {fileID: 6299235849299044698, guid: 29c94a1c88328f9458822e26a866d4fa,
+    type: 3}
   JumpX: 7
   JumpY: 15
 --- !u!58 &1636684905

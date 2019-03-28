@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public GameObject WallBounceEffectObj;
+    public GameObject DeathEffectObj;
 
     Rigidbody2D rigidBody;
 
@@ -38,6 +39,13 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Walls")
         {
             GameObject effect = Instantiate(WallBounceEffectObj, collision.contacts[0].point, Quaternion.identity);
+
+            Destroy(effect, 0.5f);
+        }
+
+        if (collision.gameObject.tag == "Spikes")
+        {
+            GameObject effect = Instantiate(DeathEffectObj, collision.contacts[0].point, Quaternion.identity);
 
             Destroy(effect, 0.5f);
         }
