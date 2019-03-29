@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     [SerializeField] int JumpX = 10;
     [SerializeField] int JumpY = 10;
 
+    bool isDead = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,11 +45,16 @@ public class Player : MonoBehaviour
             Destroy(effect, 0.5f);
         }
 
-        if (collision.gameObject.tag == "Spikes")
+        if (collision.gameObject.tag == "Spikes" && isDead == false)
         {
+            isDead = true;
             GameObject effect = Instantiate(DeathEffectObj, collision.contacts[0].point, Quaternion.identity);
-
             Destroy(effect, 0.5f);
+
+            rigidBody.velocity = new Vector2(0f, 0f);
+            rigidBody.isKinematic = true;
+            gameObject.SetActive(false);
+
         }
 
         
